@@ -58,3 +58,14 @@ contentArr = tempArr;
 console.log(contentArr.join("\n"));
 
 // give numbers to lines in a file
+let count = 1 ; 
+let tempArr = [];
+let isNPresent = optionsArr.includes("-n");
+if(isNPresent){
+for(let i = 1 ; i< contentArr.length;i++){
+   tempArr.push(count + " ", contentArr[i]);
+   count++;
+}
+}
+content = tempArr.join("\n");
+console.log(content);
