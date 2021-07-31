@@ -24,9 +24,10 @@ for(let i = 0; i < filesArr.length;i++){
     if(ans == false){
         console.log("files doesn't exist");
         return;
-    }
-
+    }   
 }
+
+
 
 let content = "";
 for(let i = 0; i < filesArr.length;i++){
@@ -55,3 +56,5 @@ for(let i = 0 ; i < contentArr.length; i++){
 contentArr = tempArr;
 }
 console.log(contentArr.join("\n"));
+
+// give numbers to lines in a file
